@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="date" content="" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.qrcode.min.js"></script>
+</head>
+<body>
+<p>Render in table</p>
+<div id="qrcodeTable"></div>
+<p>Render in canvas</p>
+<div id="qrcodeCanvas"></div>
+<script>
+  //jQuery('#qrcode').qrcode("this plugin is great");
+  jQuery('#qrcodeTable').qrcode({
+    render  : "table",
+    text  : "http://jetienne.com"
+  }); 
+  jQuery('#qrcodeCanvas').qrcode({
+    text  : "http://jetienne.com"
+  }); 
+</script>
+
+
+</body>
+</html>
+
